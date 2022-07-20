@@ -195,7 +195,7 @@ a:hover {
 /* transfer area */
 
 /* view all button css */
-.view-button{
+.view-button {
   display: none;
   text-align: center;
 }
@@ -237,6 +237,31 @@ a:hover {
 }
 /* footer areas */
 
+
+/* upcoming match css */
+.match {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dddddd;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+  align-content: center;
+  border-radius: 5px;
+  justify-content: center;
+}
+.match-img {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+.match-text{
+  text-align: center;
+}
+/* upcoming match css */
+
 /* animation area */
 @keyframes leri {
   0% {
@@ -262,11 +287,10 @@ a:hover {
     line-height: 20px;
     color: #ffffff;
   }
-  .banner-para{
-    
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  .banner-para {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .banner-btn {
     display: inline-block;
@@ -284,7 +308,7 @@ a:hover {
     transition: background-color 0.5s ease-in, box-shadow 1s ease;
   }
 
-  .filter-section{
+  .filter-section {
     flex-direction: column;
     padding: 0 0 30px 0;
   }
@@ -297,69 +321,102 @@ a:hover {
     padding: 0 0;
     background-color: transparent;
     justify-content: center;
-}
-.filter-button{
-  width: 33%;
-  border: 1px solid #dd0000;
-}
-.filter-button:nth-child(2){
-  margin-left: 1%;
-  margin-right: 1%;
-}
-.transfers{
-  width: 100%;
-  grid-template-columns: repeat(2,1fr);
-}
-.transfer{
- padding-bottom: 10px;
-}
-
-.view-button{
-  display: block;    
-  width: 100%;
-  text-align: center;
-}
-
-
-
-}
-/* tablet media quaries */
-
-@media only screen and (max-width:687px) {
-    .banner{
-      flex-direction: column;
-    }
-    .banner-para{
-      
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-    }
-    .half-inner{
-      width: 100%;
-    }
-    .aside-bar {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-items: center;
-      align-items: center;
-      padding: 0 0;
-      background-color: transparent;
-      justify-content: center;
   }
-  .filter-button{
+  .filter-button {
+    width: 33%;
     border: 1px solid #dd0000;
   }
-  .transfers{
-    width: 100%;
-    grid-template-columns: repeat(1,1fr);
+  .filter-button:nth-child(2) {
+    margin-left: 1%;
+    margin-right: 1%;
   }
-  .view-button{
+  .transfers {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .transfer {
+    padding-bottom: 10px;
+  }
+
+  .view-button {
     display: block;
     width: 100%;
     text-align: center;
   }
+}
+/* tablet media quaries */
+
+/* mobile media queries */
+
+@media only screen and (max-width: 687px) {
+  .banner {
+    flex-direction: column;
+    background-color: #161616;
+    border-radius: 30px;
+    padding: 1px 20px 0px 20px;
+}
+.banner-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+.banner-text {
+  padding: 33px 0 0 0;
+}
+.banner-para {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.view-button>.banner-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: center;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #dd0000;
+  border: 1px solid #dd0000;
+  margin-top: 20px;
+  transition: background-color 0.5s ease-in, box-shadow 1s ease;
+}
+  .half-inner {
+    width: 100%;
+  }
+  .aside-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 0 0;
+    background-color: transparent;
+    justify-content: center;
+  }
+  .filter-section {
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+  .filter-button {
+    border: 1px solid #dd0000;
+  }
+  .transfers {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .view-button {
+    display: block;
+    width: 100%;
+    margin-left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
   .quick-links {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -369,3 +426,5 @@ a:hover {
     padding: 50px 0;
   }
 }
+
+/* mobile media queries */

@@ -41,7 +41,7 @@ a:hover {
 .banner {
   background-color: #161616;
   border-radius: 30px;
-  padding: 33px 80px 0px 106px;
+  padding: 33px 80px 43px 106px;
 }
 .banner-text {
   padding: 65px 0 0 0;
@@ -369,6 +369,10 @@ a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+  }
+  .banner-btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
   .view-button > .banner-btn {
     display: inline-block;
